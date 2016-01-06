@@ -15,6 +15,8 @@ RUN apk --update add \
   php-ctype \
   php-zlib \
   php-dom \
+  php-xml \
+  php-xmlreader \
   supervisor
 
 RUN mkdir -p /etc/nginx
