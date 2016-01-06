@@ -14,6 +14,7 @@ RUN apk --update add \
   php-pdo_sqlite \
   php-ctype \
   php-zlib \
+  php-dom \
   supervisor
 
 RUN mkdir -p /etc/nginx
