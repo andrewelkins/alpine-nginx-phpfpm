@@ -17,7 +17,12 @@ RUN apk --update add \
   php-dom \
   php-xml \
   php-xmlreader \
-  supervisor
+  supervisor \
+  php-dev php-pear autoconf openssl-dev g++ make && \
+  pear update-channels && \
+  php /usr/share/pear/peclcmd.php install -f mongo && \
+  echo "extension=mongo.so" >> /etc/php/php.ini && \
+  apk del --purge php-dev php-pear autoconf openssl-dev g++
 
 RUN mkdir -p /etc/nginx
 RUN mkdir -p /var/run/php-fpm
