@@ -1,5 +1,6 @@
 FROM alpine:edge
 MAINTAINER Josh Sandlin <josh@thenullbyte.org>
+MAINTAINER Spiral Out <spiralout.eu@gmail.com>
 
 RUN apk --update add \
   nginx \
