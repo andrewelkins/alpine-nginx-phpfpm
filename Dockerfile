@@ -18,6 +18,7 @@ RUN apk --update add \
   php-dom \
   php-xml \
   php-xmlreader \
+  php-iconv \
   supervisor \
   php-dev php-pear autoconf openssl-dev g++ make && \
   pear update-channels && \
