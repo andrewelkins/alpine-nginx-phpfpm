@@ -14,6 +14,7 @@ RUN apk --update add \
   php-sqlite3 \
   php-pdo_sqlite \
   php-ctype \
+  php-curl \
   php-zlib \
   php-dom \
   php-xml \
